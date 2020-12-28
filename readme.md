@@ -1,7 +1,7 @@
-##Additional notes
-Create postgres user and database before running.
- `createuser user`
- `createdb currency`
+## Additional notes
+Create postgres user and database before running.<br>
+ `createuser user`<br>
+ `createdb --owner=user --host=localhost currency`
 
 # 1. Setup
 ## Ruby & Bundler
