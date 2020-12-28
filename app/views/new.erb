@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Create New Conversion</h1>
+      <div class="d-flex justify-content-center mt-5">
+        <form action="/new" method="POST">
+          <div class="form-group">
+            <label>From:</label>
+            <select name="from" id="from" class="form-control">
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="CHF">CHF</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>To:</label>
+            <select name="to" id="from" class="form-control">
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="CHF">CHF</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" step="0.01" class="form-control">
+          </div>
+          <input type="submit" class="btn btn-primary w-100" value="Convert">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

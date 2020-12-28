@@ -1,8 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<h1>Hello world!</h1>
+    <div class="container">
+  		<h1 class="text-center">History of Currency Conversions</h1>
+      <div class="d-flex justify-content-center">
+        <a href="/new" class="btn btn-primary mt-3">Create New Conversion</a>
+      </div>
+      <table class="table mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @conversions.each do |conversion| %>
+            <tr>
+              <th><%= conversion.id %></th>
+              <td><%= conversion.from %></td>
+              <td><%= conversion.to %></td>
+              <td><%= conversion.amount %></td>
+              <td><%= conversion.result %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
 	</body>
 </html>

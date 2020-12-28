@@ -1,3 +1,8 @@
+##Additional notes
+Create postgres user and database before running.
+ `createuser user`
+ `createdb currency`
+
 # 1. Setup
 ## Ruby & Bundler
 To be able to do this challange make sure you have installed a recent version of ruby and bunlder.
@@ -6,7 +11,7 @@ https://bundler.io
 ## Clone the project
 For this challenge, you re going to use this repo as a starter project, for that you need to clone it.
 `git clone https://github.com/2wunder/currency-data-junior.git`
-## Install dependencies 
+## Install dependencies
 To install required dependencies you just need to run `bundle install`
 ## Database server
 We assumed that you will be using *PostgreSQL* as a database server, that is why we included by default PostgreSQL datamapper adapter.
@@ -30,8 +35,8 @@ You need to create a simple web application that converts currency rates from EU
 ## Plus
 Writing tests is always appreciated, that's why we included [*Rspec*](https://rspec.info) and [*RackTest*](https://github.com/rack-test/rack-test) in the project, all necessary configuration is already done. You can check the  [*Rspec*](https://rspec.info) and [*RackTest*](https://github.com/rack-test/rack-test) documentation.
 
-To run tests simply execute `rspec`  
+To run tests simply execute `rspec`
 # 4. Finishing up
-- We are expecting your work to be hosted on github repo 
-- Send the challenge repo link in a email to us 
+- We are expecting your work to be hosted on github repo
+- Send the challenge repo link in a email to us
 - We are expecting to receive your code within a week from getting the challenge email.
